@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ReleaseController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +22,14 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/home', [ReleaseController::class, 'show_latest_releases']);
+Route::get('/release', [ReleaseController::class, 'show']);
+Route::post('/release', [ReleaseController::class, 'store']);
+
+
+Route::post('/user', [UserController::class, 'store']);
+
+
 
 require __DIR__.'/auth.php';
