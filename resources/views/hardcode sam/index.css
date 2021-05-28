@@ -1,0 +1,118 @@
+*,
+main {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    background: #efefef;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 0 auto;
+    background: #333;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-box {
+    background: #d4d9df;
+}
+
+.content-box {
+    background: #e3f1a2;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto 0.5em;
+}
+
+.container-nav {
+    display: flex;
+    margin: 0;
+}
+
+/* footer */
+
+footer {
+    margin: 0 auto;
+    display: flex;
+}
+
+.card-left {
+    border-right: solid 2px lightgray;
+    width: 50%;
+}
+
+.card-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+}
+
+/* LAYOUT */
+
+/* NAVBAR STYLING & POSITIONING */
+
+nav {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    background: #333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    /* float: left; */
+}
+nav li {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    /* border: violet solid 1px; */
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    /* border: turquoise solid 1px; */
+}
+
+nav a:active {
+    border-bottom: 1px #fff solid;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #3f3f3f;
+    border-bottom: 1px #fff solid;
+}
